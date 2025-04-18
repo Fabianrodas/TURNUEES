@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="1000.0" snapToPixel="false" stylesheets="@../../../../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.uees.reproductorproyecto.ReproductorController">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="450.0" fitWidth="720.0" layoutX="20.0" layoutY="48.0" />
+      <StackPane fx:id="stackPane" alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="1000.0" translateY="-1.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="367.0">
+               <children>
+                  <Button fx:id="minimizar" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizarStage" prefHeight="56.0" prefWidth="70.0" text="-" translateY="-5.0">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="maximizar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#maximizarStage" prefHeight="43.0" prefWidth="70.0" text="🗗">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cerrar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cerrarStage" prefHeight="43.0" prefWidth="70.0" stylesheets="@../../../../css/styles.css" text="❌">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </StackPane>
+      <VBox fx:id="vboxTurno" layoutX="739.0" layoutY="47.0" prefHeight="520.0" prefWidth="250.0" spacing="6.0" style="-fx-background-color: #c7c7c7;" translateY="-1.0">
+         <children>
+            <Label fx:id="labelTurnoActual" prefHeight="24.0" prefWidth="226.0" text="Turno actual:">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="turnoActual" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="226.0" style=": bold;" text="1" textFill="RED">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelTurnosCola" prefHeight="24.0" prefWidth="283.0" text="Turnos en la cola:">
+               <font>
+                  <Font name="Segoe UI" size="20.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="313.0" prefWidth="226.0">
+               <content>
+                  <VBox fx:id="vboxTurnos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="200.0" spacing="2.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+            <Button fx:id="btnVentanas" mnemonicParsing="false" onAction="#abrirVentanaHome" prefHeight="46.0" prefWidth="226.0" text="Abrir Ventanas" translateY="3.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="10.0" top="10.0" />
+         </padding></VBox>
+      <HBox fx:id="hboxBotones" alignment="CENTER" layoutX="20.0" layoutY="498.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="720.0" spacing="10.0" style="-fx-background-color: #c7c7c7;">
+         <children>
+            <Button fx:id="btnPrevious" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#previous" style="-fx-background-color: transparent;" text="⏮">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnPlay" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#play" prefHeight="86.0" prefWidth="82.0" style="-fx-background-color: transparent;" text="⏸" textAlignment="CENTER">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnNext" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#next" style="-fx-background-color: transparent;" text="⏭">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Button>
+            <HBox fx:id="hboxVolumen" alignment="CENTER" prefHeight="68.0" prefWidth="199.0" translateX="20.0">
+               <children>
+                  <Label fx:id="iconVolumen" prefHeight="40.0" prefWidth="46.0" text="🔊" translateX="10.0">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="sliderVolumen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" value="100.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label fx:id="titulo" layoutX="20.0" layoutY="467.0" text="TituloDelVideo.mp4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <HBox fx:id="hboxTitulo" alignment="CENTER_LEFT" layoutX="14.0" layoutY="11.0" prefHeight="30.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/uees.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tituloProyecto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="102.0" text="TURNUEES">
+               <font>
+                  <Font name="Yu Gothic UI Semibold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox fx:id="vboxVolumen" alignment="CENTER" layoutX="304.0" layoutY="214.0" opacity="0.85" prefHeight="117.0" prefWidth="140.0" style="-fx-background-color: #c7c7c7;" visible="false">
+         <children>
+            <Label fx:id="tituloVolumen" text="Volumen" textAlignment="CENTER" textFill="#868686">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelVolumen" text="100%" textAlignment="CENTER" textFill="#868686">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

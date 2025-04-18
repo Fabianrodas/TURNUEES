@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="663.0" stylesheets="@../../../../css/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.edu.uees.reproductorproyecto.HomeController">
+   <children>
+      <StackPane fx:id="stackPane" alignment="TOP_RIGHT" layoutY="1.0" prefHeight="26.0" prefWidth="663.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="367.0">
+               <children>
+                  <Button fx:id="minimizar" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#minimizarStage" prefHeight="57.0" prefWidth="70.0" text="-" translateY="-7.0">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cerrar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cerrarStage" prefHeight="43.0" prefWidth="70.0" text="❌">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </StackPane>
+      <HBox fx:id="hboxTitulo" alignment="CENTER_LEFT" layoutX="210.0" layoutY="45.0" prefHeight="101.0" prefWidth="234.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/uees.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="tituloProyecto" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="172.0" text="TURNUEES">
+               <font>
+                  <Font name="System Italic" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutX="58.0" layoutY="146.0" prefHeight="387.0" prefWidth="544.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="72.0" prefWidth="370.0" text="¿Quién desea acceder al sistema?" translateX="100.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="317.0" prefWidth="554.0" spacing="60.0">
+               <children>
+                  <VBox fx:id="vboxPac" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#abrirUsuario" prefHeight="312.0" prefWidth="254.0">
+                     <children>
+                        <ImageView fitHeight="251.0" fitWidth="258.0" pickOnBounds="true" preserveRatio="true" translateX="-15.0">
+                           <image>
+                              <Image url="@../imagenes/paciente.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="txtPacienteHome" alignment="CENTER" prefHeight="59.0" prefWidth="111.0" text="Paciente">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="vboxDoc" alignment="CENTER" layoutX="10.0" layoutY="10.0" onMouseClicked="#abrirDoctor" prefHeight="312.0" prefWidth="254.0">
+                     <children>
+                        <ImageView fitHeight="257.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/doctor.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="txtDocHome" alignment="CENTER" prefHeight="54.0" prefWidth="92.0" text="Doctor">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

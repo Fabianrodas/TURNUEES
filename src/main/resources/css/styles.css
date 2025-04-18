@@ -1,0 +1,151 @@
+.label {
+    -fx-font-family: "Yu Gothic UI Semibold";
+}
+
+#nombreTurnoCola {
+    -fx-font-size: 14px; 
+    -fx-font-family: "Yu Gothic Medium";
+}
+
+#hboxSintomas{
+    -fx-background-color: #E5E6E6;
+    -fx-border-radius: 3px;
+}
+
+#hbox1, #hbox3, #hbox5, #hbox7, #hbox9, #hbox11, #hbox13, #hbox15, #hbox17, #hbox19, #hbox21, #hbox23 {
+    -fx-background-color: #bab8b8;
+}
+
+.button{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15; 
+    -fx-padding: 5 10; 
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #585858;
+    -fx-cursor: hand;
+}
+
+#btnRegistrate {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-font-style: italic;
+    -fx-font-weight: normal;
+    -fx-underline: true;
+    -fx-font-size: 13px;
+}
+
+#btnRegistrate:hover {
+    -fx-background-color: transparent;
+    -fx-text-fill: #922020;
+    -fx-cursor: hand;
+}
+
+#cerrar, #minimizar, #maximizar{
+    -fx-text-fill: black;
+    -fx-background-color: transparent;
+    -fx-background-radius: 0; 
+}
+
+#cerrar:hover {
+    -fx-background-color: #F42E2E;
+    -fx-text-fill: white;
+}
+
+#minimizar:hover, #maximizar:hover{
+    -fx-background-color:#E8E7E7;
+}
+
+#minimizar{
+    -fx-font-size: 40px;
+}
+
+#cerrar {
+    -fx-font-size: 15px;
+}
+
+#maximizar {
+    -fx-font-size: 20px;
+}
+
+#btnPlay, #btnNext, #btnPrevious {
+     -fx-font-size: 35px;
+     -fx-text-fill: black;
+}
+
+.slider .thumb {
+    -fx-background-color: black;
+    -fx-background-radius: 50%;
+    -fx-pref-width: 20px;
+    -fx-pref-height: 20px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 2);
+}
+
+.slider .track {
+    -fx-background-color: #ddd;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+#btnSeleccionaSintoma {
+    -fx-font-size: 15px;
+}
+
+#generoMasculino, #generoFemenino {
+    -fx-font-style: italic;
+}
+
+#vboxDoc, #vboxPac {
+    -fx-background-color: #dedcdc;
+    -fx-background-radius: 10px;
+}
+
+#vboxDoc:hover, #vboxPac:hover {
+    -fx-background-color: #A8A8A8;
+    -fx-cursor: hand;
+}
+
+#txtPacienteHome, #txtDocHome {
+    -fx-font-size: 25px;
+}
+
+#btnVentanas, #btnCerrarsesion {
+    -fx-font-size: 17px;
+}
+
+#btnCerrarsesion, #btnRegresarRegistro, #btnRegresarLogin {
+    -fx-background-color: #922020;
+}
+
+#btnCerrarsesion:hover, #btnRegresarRegistro:hover, #btnRegresarLogin:hover {
+    -fx-background-color: red;
+    -fx-cursor: hand;
+}
+
+
+.check-box {
+    -fx-font-size: 13px;
+    -fx-text-fill: #333;
+    -fx-padding: 5 10 5 0;
+}
+
+.check-box .box {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #922020;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}

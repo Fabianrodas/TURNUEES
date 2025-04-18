@@ -1,0 +1,4 @@
+--patch-module
+ec.edu.uees.reproductorproyecto=_
+--add-reads
+ec.edu.uees.reproductorproyecto=ALL-UNNAMED

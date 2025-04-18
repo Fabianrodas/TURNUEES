@@ -1,0 +1,2 @@
+Doctor{nombres=Fabián Emmanuel, apellidos=Rodas Hidalgo, correo=fabianrodas2005@gmail.com, cedula=099383811, telefono=099282883, contrasena=fabian21}
+Doctor{nombres=null, apellidos=null, correo=null, cedula=null, telefono=null, contrasena=null}

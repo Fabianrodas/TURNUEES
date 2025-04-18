@@ -1,0 +1,24 @@
+Dificultad para respirar,1
+Dolor en el pecho intenso,1
+Pérdida de conciencia,1
+Convulsiones,1
+Pérdida de visión o audición súbita,1
+Vómitos con sangre,1
+Sangrado incontrolable,1
+Parálisis o debilidad repentina,1
+Dolor de cabeza intenso y repentino,1
+Fiebre alta persistente (>39°C),2
+Vómitos o diarrea severos,2
+Dolor abdominal severo,2
+Dolor intenso en articulaciones,2
+Mareos o desmayos ocasionales,2
+Reacción alérgica (ronchas),2
+Dificultad para orinar o dolor,2
+Tos persistente y flema con sangre,2
+Dolor de cabeza leve o moderado,3
+Resfriado común,3
+Dolor muscular,3
+Picazón en la piel o irritaciones leves,3
+Cansancio o fatiga prolongada,3
+Insomnio o problemas de sueño,3
+Molestias digestivas leves,3
